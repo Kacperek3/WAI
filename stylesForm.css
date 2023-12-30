@@ -1,0 +1,229 @@
+#formText{
+    border-bottom: 3px solid white;
+    width: 100%;
+}
+
+.mid {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+#introduce {
+    width: 50%;
+    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    margin-right: 5%;
+    align-items: center;
+    color: white;
+}
+
+#svg {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+
+
+.second {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forms{
+    width: 100%;
+    text-align: center;
+}
+.rowInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.containerForm{
+    margin-bottom: 3%;
+}
+
+#imieLabel {
+    color: white;
+    font-size: 40px;
+    margin-right: 5%;
+}
+
+#nazwiskoLabel {
+    color: white;
+    font-size: 40px;
+    margin-right: 1%;
+}
+
+#emailLabel {
+    color: white;
+    font-size: 40px;
+    margin-right: 5%;
+}
+
+#miastoLabel {
+    color: white;
+    font-size: 40px;
+    margin-right: 4%;
+}
+#mezczyznaLabel {
+    color: white;
+    font-size: 40px;
+    margin-right: 4%;
+}
+.customRadio:hover{
+    cursor: pointer;
+}
+
+#kobietaLabel {
+    color: white;
+    font-size: 40px;
+    margin-right: 4%;
+}
+#wyksztalcenieLabel {
+    color: white;
+    font-size: 40px;
+    margin-right: 1%;
+}
+
+#wyksztalcenie{
+    width: 250px; 
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+#uwagiLabel {
+    display: block;
+    color: white;
+    font-size: 40px;
+    margin-right: 1%;
+}
+
+#uwagi {
+    width: 500px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#uwagi:hover {
+    border-color: #333;
+}
+
+#uwagi:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.Text {
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.Text:focus {
+    border-color: #3498db;
+}
+
+.Text:hover {
+    border-color: #3498db;
+}
+
+.customRadio {
+    width: 30px; 
+    height: 30px;
+}
+
+.finalsButtons{
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(1, 170, 170);
+    font-weight:bold;
+    font-size: large;
+    color: white;
+    border: 3px solid #f3f3f3;
+    transition-duration: 0.1s;
+    margin: 10px;
+}
+
+.finalsButtons:hover{
+    border-color: #4da4df;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+
+    .containerForm{
+        margin-bottom: 50px;
+    }
+    #imieLabel {
+        display: block;
+        margin-right: 0%;
+    }
+    #nazwiskoLabel {
+        display: block;
+        margin-right: 0%;
+    }
+    #emailLabel {
+        display: block;
+        margin-right: 0%;
+    }
+    #miastoLabel {
+        display: block;
+        margin-right: 0%;
+    }
+
+    #mezczyznaLabel {
+        font-size: 35px;
+        margin-right: 4%;
+    }
+    #kobietaLabel {
+        font-size: 35px;
+        margin-right: 4%;
+    }
+
+    .customRadio {
+        width: 25px; 
+        height: 25px;
+    }
+
+    #uwagi {
+        width: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    #wyksztalcenieLabel{
+        display: block;
+    }
+}

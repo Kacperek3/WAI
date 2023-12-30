@@ -1,0 +1,110 @@
+.middle{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.colMiddle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.table{
+    order: 1;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.table h1{
+    width: 100%;
+    text-align: center;
+    color: white;   
+}
+
+.footballTable{
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.footballTable thead tr{
+    background-color: darkturquoise;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.footballTable th,
+.footballTable td{
+    padding: 15px 17px;
+}
+
+.footballTable tbody tr{
+    border-bottom: 1px solid #333;
+}
+
+.footballTable tbody tr:nth-of-type(even){
+    background-color: blanchedalmond;
+}
+.footballTable tbody tr:nth-of-type(odd){
+    background-color: white;
+}
+
+.aboutLeague{
+    font-size: 22px;
+    color: white;   
+    text-align: justify;
+}
+
+.aboutLeague h1{
+    text-align: center;
+}
+
+.aboutHobby{
+    margin-top: 7%;
+    font-size: 22px;
+    color: white;   
+    text-align: justify;
+}
+
+.aboutHobby h1{
+    text-align: center;
+}
+
+#mainWebsite{
+    border-bottom: 3px solid white;
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }
+    .table{
+        width: 100%;
+        margin-left: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        justify-content: center;
+        text-align: center;
+    }
+    .footballTable{ 
+        margin: 5px auto;
+    }
+
+    .colMiddle{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+}  
+@media (max-width:800px) {
+    .aboutHobby{
+        margin-top: 10%;
+    }
+}

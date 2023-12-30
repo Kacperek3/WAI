@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="language.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jqueryUI.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <video src="videoMainSite.mp4" autoplay loop muted disablepictureinpicture></video>
+        <img id="logo_Premier_League" src="Premier-League-4.png" alt="Logo Premier League">
+    </header>
+    <div class="menu">
+        <nav class="top-menu">
+            <div class="con">
+                <div class="conMargin"><a href="main.html" id ="mainWebsite">Strona Główna</a></div>
+                <div class="conMargin"><a href="galery.html" id="galeryText">Galeria</a></div>
+                <div class="conMargin"><a href="#" id ="formText">Newsletter</a></div>
+                <div class="conMargin">
+                    <div class="submenu">
+                        <a href="#" id="latestMatches">Najbliższe Mecze ▼</a>
+                        <ul class="dropdown">
+                            <li><a target="_blank" href="https://www.google.com/search?q=mecze+premier+league&oq=mecze+premier+lea&gs_lcrp=EgZjaHJvbWUqDQgAEAAYgwEYsQMYgAQyDQgAEAAYgwEYsQMYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDQyNjVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#sie=m;/g/11svj12jd2;2;/m/02_tc;dt;fp;1;;;">12.11.2023</a></li>
+                            <li><a target ="_blank" href="https://www.google.com/search?q=mecze+premier+league&oq=mecze+premier+lea&gs_lcrp=EgZjaHJvbWUqDQgAEAAYgwEYsQMYgAQyDQgAEAAYgwEYsQMYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDQyNjVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#sie=m;/g/11svj14x72;2;/m/02_tc;dt;fp;1;;;">25.11.2023</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+
+    <div class="mid">
+        <div class="first">
+            <div id = "svg">
+                <svg width="200" height="200">
+                    <image x="0" y="0" width="200" height="200" xlink:href="logo.svg" />
+                  </svg>
+            </div>
+            <div id = "introduce">
+                <h1>Zapisz się do newslletera</h1>
+            </div>
+        </div>
+        
+        <div class="second">
+            <form action="odbierz.php" class="forms" method="post">
+                
+                <div class="containerForm">
+                    <label for="imie" id="imieLabel">Imię:</label>
+                    <input type="text" id="imie" class="Text" name="imie" required><br>
+                </div>
+                
+                <div class="containerForm">
+                    <label for="nazwisko" id="nazwiskoLabel">Nazwisko:</label>
+                    <input type="text" id="nazwisko" class="Text" name="nazwisko" required><br>
+                </div>
+                
+                <div class="containerForm">
+                    <label for="email" id="emailLabel">Email:</label>
+                    <input type="email" id="email" class="Text" name="email" required autocomplete="email"><br>
+                </div>
+                
+                <div class="containerForm">
+                    <label for="miasto" id="miastoLabel">Miasto:</label>
+                    <input type="text" id="miasto" class="Text" name="miasto" required><br>
+                </div>
+                
+                <div class="containerForm">
+                    <input type="radio" class="customRadio" id="mezczyzna" name="plec" value="Mężczyzna">
+                    <label for="mezczyzna" id="mezczyznaLabel">Mężczyzna</label>
+                    <input type="radio" class="customRadio" id="kobieta" name="plec" value="Kobieta">
+                    <label for="kobieta" id="kobietaLabel">Kobieta</label><br>
+                </div>
+                
+                <div class="containerForm">
+                    <label for="wyksztalcenie" id="wyksztalcenieLabel">Wykształcenie: </label>
+                    <select id="wyksztalcenie" name="wyksztalcenie">
+                        <option value="podstawowe" id="podstawowe">Podstawowe</option>
+                        <option value="średnie" id="srednie">Średnie</option>
+                        <option value="wyższe" id="wyzsze">Wyższe</option>
+                    </select><br>
+                </div>
+                
+                <div class="containerForm">
+                    <label for="uwagi" id="uwagiLabel">Uwagi:</label>
+                    <textarea id="uwagi" name="uwagi" rows="4" cols="50"></textarea><br>
+                </div>                
+
+                <div class="containerForm">
+                    <input type="reset" value="Wyczyść" class="finalsButtons">
+                    <input type="submit" value="Wyślij" class="finalsButtons">
+                </div>
+                <div id="dialogENG" title="Validation Error">
+                    Please fill in all the required fields.
+                </div>
+                <div id="dialogPL" title="Błąd">
+                    Proszę uzupełnij każde wymagane Pole.
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Zaobserwuj mnie</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/premierleague"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/premierleague/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col2">
+                <a href="#">Początek strony</a>
+            </div>
+            <div class="footer-col3">
+                
+            </div>
+        </div>
+        <div id = "copyright">
+            &copy; 2023 Premier League. Wszelkie prawa zastrzeżone.
+        </div>
+    </footer>
+    
+</body>
+</html>

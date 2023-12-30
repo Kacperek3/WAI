@@ -1,0 +1,354 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+#galeryText{
+    border-bottom: 3px solid white;
+    width: 100%;
+}
+
+.mid {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+#introduce {
+    width: 50%;
+    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+    align-items: center;
+    color: white;
+}
+
+#svg {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    font-size: 0;
+    border: 2px solid white;
+    margin-bottom: 90px;
+}
+    
+.single{
+    border: 3px solid white;
+}
+
+.photo {
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+.photo:hover {
+    transform: scale(1.2);
+}
+
+.photo:active{
+    transform: scale(1.75);
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4%;
+    
+}
+
+.forms {
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#fileLabelDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#fileLabel {
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#uploadFile {
+    border: 1px solid #f3f3f3;
+    border-right: 1px solid #ada9a9;
+    border-radius: 3%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#backgroundColor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke; 
+    border-radius: 5px;
+}
+#row{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#uploadFile:hover {
+    border-color: #555;
+}
+#submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#submitButton{
+    width: 30%;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(1, 170, 170);
+    font-weight:bold;
+    font-size: large;
+    color: white;
+    border: 3px solid #f3f3f3;
+    transition-duration: 0.1s;
+    margin-bottom: 5px;
+}
+#submitButton:hover {
+    border-color: #4da4df;
+    transform: scale(1.05);
+}
+#watermarkDiv{
+    width: 100%;
+    
+}
+#waterMarkLabel{
+    margin-left: 40px;
+    color: #555;
+    font-size: 14px;
+}
+#watermark{
+    border-radius: 8px;
+}
+#watermark:hover{
+    border-color: #555;
+}
+
+
+#nrow{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#authorDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+#titleDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
+#authorLabel{
+    margin-right: 10px;
+    color: #555;
+    font-size: 14px;
+}
+#author{
+    border-radius: 8px;
+}
+#author:hover{
+    border-color: #555;
+}
+
+#titleLabel{
+    margin-right: 30px;
+    color: #555;
+    font-size: 14px;
+}
+#title{
+    border-radius: 8px;
+}
+#title:hover{
+    border-color: #555;
+}
+
+
+
+#third{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: solid white 2px;
+}
+#headerThumbnails{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 13px;
+    color: white;
+}
+#Thumbnails{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+.thumbnail{
+    border: solid darkcyan 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page{
+    margin: 5px;
+    color: wheat;
+}
+.current-page {
+    color: rgb(15, 49, 241);
+}
+
+.author_and_title{
+    margin-left: 10px;
+}
+
+
+#rowLogin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+#rowLogin a{
+    margin: 5px;
+}
+#rowLogin a button{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    transition-duration: 0.1s;
+}
+#rowLogin a button:hover{
+    border-color: #4da4df;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1400px) {
+    .second {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    #Thumbnails{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 800px) {
+    .second {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first{
+        display: inline;
+    }
+    #introduce {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 60px;
+    }
+    #row{
+        margin-left: 0px;
+        margin-right: 5px;
+        flex-direction: column;
+    }
+    #nrow{
+        margin-left: 0px;
+        margin-right: 5px;
+        flex-direction: column;
+    }
+
+    #authorDiv{
+        margin-left: 18px;
+        margin-bottom: 10px;
+    }
+    #titleDiv{
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    #titleLabel{
+        margin-right: 10px;
+        color: #555;
+        font-size: 14px;
+    }
+    .forms{
+        margin-bottom: 25px
+    }
+    
+
+
+    #watermark{
+        margin-right: 20px;
+    }
+    #watermarkDiv{
+        margin-top: 10px; 
+    }
+    #waterMarkLabel{
+        margin-left: 20px;
+    }
+    #uploadFile {
+        border-right: 0px solid #ada9a9;
+        margin-left: 40px;
+    }
+    #uploadFileDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

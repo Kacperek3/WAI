@@ -1,0 +1,11 @@
+{
+    "name": "galeria",
+    "require": {
+        "mongodb/mongodb": "^1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "":"src/"
+        }
+    }
+}
