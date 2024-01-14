@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz Rejestracyjny</title>
+    <title>Formularz Logowanie</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,26 +56,18 @@
 <body>
 
 <div class="kontener-rejestracji">
-    <h2>Rejestracja</h2>
-    <form action="register.php" method="post" class="formularz-rejestracyjny">
+    <h2>Logowanie</h2>
+    <form action="../model/login.php" method="post" class="formularz-rejestracyjny">
         <div class="grupa-formularza">
             <label for="nazwa_uzytkownika">Nazwa użytkownika:</label>
             <input type="text" id="nazwa_uzytkownika" name="nazwa_uzytkownika" required>
         </div>
         <div class="grupa-formularza">
-            <label for="email">Adres email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="grupa-formularza">
             <label for="haslo">Hasło:</label>
             <input type="password" id="haslo" name="haslo" required>
         </div>
-        <div class="grupa-formularza">
-            <label for="powtorz_haslo">Potwierdź hasło:</label>
-            <input type="password" id="powtorz_haslo" name="powtorz_haslo" required>
-        </div>
         <div id="koniec">
-            <button type="submit">Zarejestruj</button>
+            <button type="submit">Zaloguj</button>
         </div>
     </form>
 </div>

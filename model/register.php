@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $db = get_db();
+    require_once("business.php");
     
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -20,15 +20,15 @@
             exit();
         }
 
-        $collection = $db->users;
-        $existingUser = $collection->findOne(['nazwa_uzytkownika' => $nazwa_uzytkownika]);
+        
+        $existingUser = get_users_by_user($nazwa_uzytkownika);
 
         if ($existingUser) {
             echo "Użytkownik o podanej nazwie już istnieje.";
             exit();
         }
 
-        $existingUserByEmail = $collection->findOne(['email' => $email]);
+        $existingUserByEmail = get_users_by_email($email);
 
         if ($existingUserByEmail) {
             echo "Użytkownik o podanym adresie email już istnieje.";
@@ -36,28 +36,11 @@
         }
 
         $haslo = password_hash($haslo, PASSWORD_DEFAULT);
+        
+        save_users($nazwa_uzytkownika, $email, $haslo);
 
-        $user = [
-            'nazwa_uzytkownika' => $nazwa_uzytkownika,
-            'email' => $email,
-            'haslo' => $haslo,
-        ];
-
-        $collection->insertOne($user);
         $_SESSION['nazwa_uzytkownika'] = $nazwa_uzytkownika;
         echo "Rejestracja zakończona pomyślnie!";
     }
 
-    function get_db(){
-        require '../../vendor/autoload.php';
-        $mongo = new MongoDB\Client(
-            "mongodb://localhost:27017/wai",
-            [
-                'username' => 'wai_web',
-                'password' => 'w@i_w3b',
-            ]
-        );
-        $db = $mongo->wai;
-        return $db;
-    }
 ?>

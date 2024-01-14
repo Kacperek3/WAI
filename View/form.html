@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premier League</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylesForm.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/stylesForm.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="language.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="jqueryUI.js"></script>
     
 </head>
 <body>
     <header class="header">
-        <video src="videoMainSite.mp4" autoplay loop muted disablepictureinpicture></video>
-        <img id="logo_Premier_League" src="Premier-League-4.png" alt="Logo Premier League">
+        <video src="../staticIMG/videoMainSite.mp4" autoplay loop muted disablepictureinpicture></video>
+        <img id="logo_Premier_League" src="../staticIMG/Premier-League-4.png" alt="Logo Premier League">
     </header>
     <div class="menu">
         <nav class="top-menu">
             <div class="con">
                 <div class="conMargin"><a href="main.html" id ="mainWebsite">Strona Główna</a></div>
-                <div class="conMargin"><a href="galery.html" id="galeryText">Galeria</a></div>
+                <div class="conMargin"><a href="galery.php" id="galeryText">Galeria</a></div>
                 <div class="conMargin"><a href="#" id ="formText">Newsletter</a></div>
                 <div class="conMargin">
                     <div class="submenu">
@@ -44,7 +40,7 @@
         <div class="first">
             <div id = "svg">
                 <svg width="200" height="200">
-                    <image x="0" y="0" width="200" height="200" xlink:href="logo.svg" />
+                    <image x="0" y="0" width="200" height="200" xlink:href="../staticIMG/logo.svg" />
                   </svg>
             </div>
             <div id = "introduce">
@@ -99,12 +95,6 @@
                 <div class="containerForm">
                     <input type="reset" value="Wyczyść" class="finalsButtons">
                     <input type="submit" value="Wyślij" class="finalsButtons">
-                </div>
-                <div id="dialogENG" title="Validation Error">
-                    Please fill in all the required fields.
-                </div>
-                <div id="dialogPL" title="Błąd">
-                    Proszę uzupełnij każde wymagane Pole.
                 </div>
             </form>
         </div>
